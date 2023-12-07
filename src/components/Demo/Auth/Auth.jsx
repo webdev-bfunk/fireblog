@@ -25,7 +25,7 @@ const Auth = ({ modal, setModal }) => {
         <div className="flex flex-col justify-center items-center gap-[3rem]">
           {signReq === "" ? (
             <>
-            <h2 className="text-2xl pt-[5rem]">{createUser ? "Join Medium" : "Welcome Back!"}</h2>
+            <h2 className="text-4xl pt-[5rem]">{createUser ? "Join Medium" : "Welcome Back!"}</h2>
             <div className="flex flex-col gap-2 w-fit mx-auto">
               <Button
                 icon={<FcGoogle className="text-xl" />}
@@ -42,7 +42,7 @@ const Auth = ({ modal, setModal }) => {
               />
             </div>
             <p>
-                {createUser ? "Already have an account?" : "Don't have an Account?"}
+                {createUser ? "Already have an account?" : "Not a member?"}
                 <button className="text-green-600 hover:text-green-700 font-bold ml-1"
                 onClick={() => setCreateUser(!createUser)}>{createUser ? "Sign In" : "Create an Account"}</button>
             </p>
